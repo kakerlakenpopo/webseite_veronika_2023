@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>veronika kaiping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>veronika<br>kaiping</h1>
+        </a>
+
+        <div class="menu">
+            <button class="menu-collapsible" class="underline"><a>projects</a></button>
+            <div class="collapsibleItems" style="display:none;">
+                <div class="menu-link"><a href="cloud.html">[cloud]</a></div>
+                <div class="menu-link"><a href="brett.html">b|r|ett</a></div>
+                <div class="menu-link"><a href="db-leitsystem.html">DB-Leitsystem</a></div>
+                <div class="menu-link"><a href="moringaseedfilter.html">moringa seed filter</a></div>
+                <div class="menu-link"><a href="ort.html">ORT</a></div>
+                <div class="menu-link"><a href="showerheand.html">showerheand</a></div>
+                <div class="menu-link"><a href="variations.html">variations</a></div>
+                <div class="menu-link"><a href="wattwurmdesign.de.html">wattwurmdesign.de</a></div>
+                <div class="menu-link"><a href="anima.html">anima</a></div>
+            </div>
+
+            <div class="menu-items"><a href="kakerlakenpopo.de.html">kakerlakenpopo</a></div>
+            <div class="menu-items"><a href="about.html">about</a></div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="project-image-groß"><img src="projekte/brett/b_r_ett-5.jpg" style="width:100%"></div>
+        
+        <div class="text">
+            project-title
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, sapiente minima sequi cupiditate
+                nostrum tempore incidunt ipsa, expedita numquam cumque nihil laudantium molestiae. Quam est
+                cupiditate beatae ex. Ducimus, delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt beatae necessitatibus voluptatem
+                cumque unde commodi, sapiente tempora quae accusantium similique doloremque dolor eius quos illo
+                eveniet rem molestias delectus saepe!
+            </p>
+        </div>
+
+        <div class="project-gallery">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+        </div>
+
+        <div class="project-image-groß"><img src="projekte/brett/b_r_ett-5.jpg" style="width:100%"></div>
+    
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var collapsibleItems = this.nextElementSibling;
+                if (collapsibleItems.style.display === "block") {
+                    collapsibleItems.style.display = "none";
+                } else {
+                    collapsibleItems.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

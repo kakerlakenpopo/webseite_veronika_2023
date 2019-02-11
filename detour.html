@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>veronika kaiping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>veronika<br>kaiping</h1>
+        </a>
+
+        <div class="menu">
+            <button class="menu-collapsible"><a>projects</a></button>
+            <div class="collapsibleItems" style="display:none;">
+                <div class="menu-link"><a href="cloud.html">[cloud]</a></div>
+                <div class="menu-link"><a href="brett.html">b|r|ett</a></div>
+                <div class="menu-link"><a href="db-leitsystem.html">DB-Leitsystem</a></div>
+                <div class="menu-link"><a href="moringaseedfilter.html">moringa seed filter</a></div>
+                <div class="menu-link"><a href="ort.html">ORT</a></div>
+                <div class="menu-link"><a href="showerheand.html">showerheand</a></div>
+                <div class="menu-link"><a href="variations.html">variations</a></div>
+                <div class="menu-link"><a href="wattwurmdesign.de.html">wattwurmdesign.de</a></div>
+                <div class="menu-link"><a href="anima.html">anima</a></div>
+            </div>
+
+            <div class="menu-items"><a href="kakerlakenpopo.de.html">kakerlakenpopo</a></div>
+
+            <div class="menu-items"><a href="about.html">about</a></div>
+            <div class="menu-items einschub"><a href="detour.html" class="underline">detour 2019</a></div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="project-image-groß"><img src="projekte/brett/brett_gif_16_9.gif" style="width:100%"></div>
+
+        <div class="text">
+            b|r|ett
+            <p>
+                I designed a bed which is easily assembled and disassembled due to the connection with keyhole brackets
+                — no
+                tools are needed, you just hang the boards together.
+                With b[r]ett you can shorten the bed's width at any time by simply cutting the connecting boards to
+                your desired length.
+                The frame was made from two acacia wood panels (60 cm*220 cm).
+                <a href="https://vimeo.com/313588839" target="_blank">video</a> (pwd: kaiping)
+            </p>
+        </div>
+
+        <div class="project-gallery">
+            <img src="projekte/brett/brett_beschlag.png">
+            <img src="projekte/brett/brett_ganz.png">
+            <img src="projekte/brett/brett_bretter.png">
+            <img src="projekte/brett/brett_vero.png">
+        </div>
+
+        <div class="project-image-groß"><img src="projekte/brett/brett_decke.png" style="width:100%"></div>
+
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var collapsibleItems = this.nextElementSibling;
+                if (collapsibleItems.style.display === "block") {
+                    collapsibleItems.style.display = "none";
+                } else {
+                    collapsibleItems.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

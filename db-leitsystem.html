@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>veronika kaiping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>veronika<br>kaiping</h1>
+        </a>
+
+        <div class="menu">
+            <button class="menu-collapsible"><a>projects</a></button>
+            <div class="collapsibleItems" style="display:block;">
+                <div class="menu-link"><a href="cloud.html">[cloud]</a></div>
+                <div class="menu-link"><a href="brett.html">b|r|ett</a></div>
+                <div class="menu-link"><a href="db-leitsystem.html" class="underline">DB-Leitsystem</a></div>
+                <div class="menu-link"><a href="moringaseedfilter.html">moringa seed filter</a></div>
+                <div class="menu-link"><a href="ort.html">ORT</a></div>
+                <div class="menu-link"><a href="showerheand.html">showerheand</a></div>
+                <div class="menu-link"><a href="variations.html">variations</a></div>
+                <div class="menu-link"><a href="wattwurmdesign.de.html">wattwurmdesign.de</a></div>
+                <div class="menu-link"><a href="anima.html">anima</a></div>
+            </div>
+
+            <div class="menu-items"><a href="kakerlakenpopo.de.html">kakerlakenpopo</a></div>
+            <div class="menu-items"><a href="about.html">about</a></div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="project-image-groß"><iframe width="600" height="350" src="https://player.vimeo.com/video/313533621"
+                frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe></div>
+
+        <div class="text">
+            project-title <a style="color: #f15a40; font-family:avenir_light"> &ndash; service design, interaction design</a>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, sapiente minima sequi cupiditate
+                nostrum tempore incidunt ipsa, expedita numquam cumque nihil laudantium molestiae. Quam est
+                cupiditate beatae ex. Ducimus, delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt beatae necessitatibus voluptatem
+                cumque unde commodi, sapiente tempora quae accusantium similique doloremque dolor eius quos illo
+                eveniet rem molestias delectus saepe!
+                Beitrag auf <a href="http://ran1.de/index.php?cmd=9445" target="_blank">RAN1</a>
+            </p>
+        </div>
+
+        <!--<div class="project-gallery">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+            <img src="projekte/brett/b_r_ett-5.jpg">
+        </div>-->
+        <div class="text">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, sapiente minima sequi cupiditate
+                nostrum tempore incidunt ipsa, expedita numquam cumque nihil laudantium molestiae. Quam est
+                cupiditate beatae ex. Ducimus, delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt beatae necessitatibus voluptatem
+                cumque unde commodi, sapiente tempora quae accusantium similique doloremque dolor eius quos illo
+                eveniet rem molestias delectus saepe!
+            </p>
+        </div>
+        <div class="project-image-groß"><iframe width="600" height="350" src="https://player.vimeo.com/video/302942872"
+                frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe></div>
+        <div class="project-image-groß"><iframe width="600" height="350" src="https://player.vimeo.com/video/302355116"
+                frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe></div>
+
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var collapsibleItems = this.nextElementSibling;
+                if (collapsibleItems.style.display === "block") {
+                    collapsibleItems.style.display = "none";
+                } else {
+                    collapsibleItems.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

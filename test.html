@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main-test.css">
+    <script src="script-test.js"></script>
+</head>
+
+<body>
+<div class="menu">
+    <button class="menu-collapsible" href="#">projects</button>
+    <div class="items">
+                    <div><a href="#">[cloud]</a></div>
+                    <div><a href="#">b|r|ett</a></div>
+                    <div><a href="#">DB-Leitsystem</a></div>
+                    <div><a href="#">moringa seed filter</a></div>
+                    <div><a href="#">ORT</a></div>
+                    <div><a href="#">showerheand</a></div>
+                    <div><a href="#">variations</a></div>
+                    <div><a href="#">wattwurmdesign.de</a></div>
+                    <div><a href="#">kakerlakenpopo.de</a></div>
+    </div>
+
+    <div class="menu-items"><a href="test.html">about</a></div>
+
+    <div class="menu-items"><a href="test.html">imprint/<br>data security</a></div>
+</div>
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var items = this.nextElementSibling;
+                if (items.style.display === "block") {
+                    items.style.display = "none";
+                } else {
+                    items.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
