@@ -137,7 +137,10 @@ main{
 
 .banner{
   position: absolute;
-  transform: scale(.6) translateX(100vh) translateY(20vh);
+  max-width: 70px;
+  margin-top: 20vh;
+  margin-left: 50%;
+  margin-right: 3vh;
 }
 
 .project-image-groß:first-child {
@@ -309,6 +312,8 @@ h1{
   }
 
 }
+
+
 
 @media only screen and (max-width: 632px) {
 iframe{
