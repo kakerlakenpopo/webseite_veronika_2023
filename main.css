@@ -89,6 +89,7 @@ header a{
   max-width: 470px;
   text-align: left;
   color: #5b999e;
+  line-height: 1.2;
 }
 .text>p, p{
   font-family: 'avenir_book';
