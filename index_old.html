@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>veronika kaiping &ndash; designer, developer and creator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>veronika<br>kaiping</h1>
+        </a>
+
+        <div class="menu">
+            <button class="menu-collapsible"><a>projects</a></button>
+            <div class="collapsibleItems" style="display:none;">
+                <div class="menu-link"><a href="cloud.html">[cloud]</a></div>
+                <div class="menu-link"><a href="variations.html">variations</a></div>
+                <div class="menu-link"><a href="brett.html">b|r|ett</a></div>
+                <div class="menu-link"><a href="db-leitsystem.html">DB-Leitsystem</a></div>
+                <div class="menu-link"><a href="moringaseedfilter.html">moringa seed filter</a></div>
+                <div class="menu-link"><a href="ort.html">ORT</a></div>
+                <div class="menu-link"><a href="anima.html">anima</a></div>
+                <div class="menu-link"><a href="showerheand.html">showerheand</a></div>
+                <div class="menu-link"><a href="wattwurmdesign.de.html">wattwurmdesign.de</a></div>
+                
+            </div>
+
+            <div class="menu-items"><a href="kakerlakenpopo.html">kakerlakenpopo</a></div>
+            <div class="menu-items"><a href="about.html">about</a></div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow-items">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <a href="cloud.html">
+                        <img src="projekte/cloud/kaiping_cloud.jpg" style="width:100%">
+                        <div class="text">[cloud] <a style="color: #f15a40; font-family:avenir_light"> &ndash; service design since 2016</a>
+                            <p>shaping campus life at anhalt university</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mySlides">
+                        <a href="variations.html">
+                    <img src="projekte/variations/kaiping_variations_photo.jpg" style="width:100%">
+                    <div class="text">variations<sup>n</sup> <a style="color: #f15a40; font-family:avenir_light"> &ndash; product design 2016</a>
+                        <p>cuttlery to prevent memory loss</p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="mySlides">
+                    <a href="brett.html">
+                        <img src="projekte/brett/kaiping_brett_full.jpg" style="width:100%">
+                        <div class="text">b|r|ett <a style="color: #f15a40; font-family:avenir_light"> &ndash; product design 2018</a>
+                            <p>easily adjustable bed frame</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mySlides">
+                    <a href="db-leitsystem.html">
+                        <img src="projekte/DB_Leitsystem/kaiping_db-leisystem.jpg" style="width:100%">
+                        <div class="text">DB-Leitsystem <a style="color: #f15a40; font-family:avenir_light"> &ndash; service design, interaction design 2018</a>
+                            <p>guidance system for the german railway service</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mySlides">
+                    <a href="moringaseedfilter.html">
+                    <img src="projekte/moringa_seed_filter/kaiping_moringaseedfilter_jug.jpg" style="width:100%">
+                    <div class="text">moringa seed filter <a style="color: #f15a40; font-family:avenir_light"> &ndash; product design 2017</a>
+                        <p>easy water filtering system</p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="mySlides">
+                        <a href="ort.html">
+                    <img src="projekte/ORT/kaiping_ort_colour.jpg" style="width:100%">
+                    <div class="text">ORT <a style="color: #f15a40; font-family:avenir_light"> &ndash; social design 2017</a>
+                        <p>building a communual space</p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="mySlides">
+                        <a href="anima.html">
+                    <img src="projekte/anima/kaiping_anima_rendering.jpg" style="width:100%">
+                    <div class="text">cor<a style="color: #f15a40; font-family:avenir_light"> &ndash; concept development, interaction design 2018</a>
+                        <p>anima, towards a living automotive: personalizing a vehicle</p>
+                    </div>
+                </a>
+                </div>
+           
+                <div class="mySlides">
+                        <a href="showerheand.html">
+                    <img src="projekte/showerheand/kaiping_showerheand_mockup.jpg" style="width:100%">
+                    <div class="text">showerheand <a style="color: #f15a40; font-family:avenir_light"> &ndash; product design 2017</a>
+                        <p>hands on/ hands free showerhand for care taking</p>
+                    </div>
+                </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var collapsibleItems = this.nextElementSibling;
+                if (collapsibleItems.style.display === "block") {
+                    collapsibleItems.style.display = "none";
+                } else {
+                    collapsibleItems.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+<style>
+    /*slideshow projects*/
+
+</style>
+
+</html>

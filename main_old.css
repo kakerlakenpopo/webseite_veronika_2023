@@ -14,51 +14,34 @@
   object-fit: cover;
 }*/
 
-a{
-    text-decoration: none;
-}
+
 body{
-    background-color: #ececec; /*br:ececec orangerot: f15a40  dark blue: 0B2D33, 0d363d*/
+  background-color: #ececec; /*br:8f8a86 orangerot: f15a40  dark blue: 0B2D33, 0d363d*/
 }
-.textindex{
-    padding: .5em;
-    font-family: 'avenir_medium';
-    width: 320px;
-    text-align: left;
-    color: #5b999e;
-    line-height: 1.2;
-  }
+
 html {
   line-height: 1;
 }
 
 header{
-  padding: 0em 1em 0 2em;
-  z-index: 1;
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  margin: 0 2% 0 3%;
 }
 h1 {
-    margin-top: 0;
   font-family: 'circular_bold';
   font-size: 50px;
-  color: #165762; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
+  color: #5b999e; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
 }
 h2{
   font-family: 'avenir_book';
-}
-h3{
-    font-family: 'avenir_book';
-    margin: .3em 0;
-    font-size: 16px;
 }
 header a{
   font-family: 'avenir_medium';
   font-size: 16px;
   text-decoration: none;
-  color: #0B2D33;
+  color: #3c3c3b;
 }
 .menu-collapsible {
   cursor: pointer;
@@ -70,7 +53,7 @@ header a{
   background-color: transparent;
 }
 .menu-items, .menu-link {
-  text-decoration-color: #3c3c3b;
+  text-decoration-color: #ffffff;
   background-color: transparent;
   cursor: pointer;
   padding: 5px;
@@ -80,14 +63,14 @@ header a{
   outline: none;
 }
 .menu-collapsible a:hover, .menu-link a:hover, .menu-items>a:hover{
-  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 50%, #f15a40 50.1%, #f15a40 100%);
-  text-decoration-color: #f15a40;
-  border-bottom: 4px solid #f15a40;
+  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 49.9%, #f15a40 50.1%, #f15a40 100%);
+  text-decoration-color: #ffffff;
+  border-bottom: 4px solid #ffffff;
 }
 .underline{
-  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 50%, #f15a40 50.1%, #f15a40 100%);
-  text-decoration-color: #f15a40;
-  border-bottom: 4px solid #f15a40;
+  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 49.9%, #f15a40 50.1%, #f15a40 100%);
+  text-decoration-color: #ffffff;
+  border-bottom: 4px solid #ffffff;
 }
 .collapsibleItems {
   padding: 0 20px;
@@ -101,11 +84,11 @@ header a{
 }
 
 .text{
-  margin: 1em 0 1em 0;
+  margin-top: 1em;
   font-family: 'avenir_medium';
-  max-width: 500px;
+  max-width: 470px;
   text-align: left;
-  color: #323232;
+  color: #3c3c3b;
   line-height: 1.2;
 }
 .text>p, p{
@@ -115,36 +98,18 @@ header a{
 .text a{
   color: #3c3c3b;
   text-align: left;
-  text-decoration: underline;
 }
 
 main{
+  max-height: 600px;
+  max-width: 600px;
+  margin-left: auto;
+    margin-right: auto;
+
   display: flex;
-  margin: 5em 0 0 0;
-  transform: translateX(15vw);
-  width: 80vw;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+  align-items: flex-start;
 }
-.main_projects{
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-.main_index{
-    margin-top: 5em;
-    transform: translateX(25vw);
-    width: 80vw;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-  .nextproject, .nextproject>a{
-      margin: 10vh 0 20vh 0;
-      font-family: 'circular_bold';
-      color: #3c3c3b;
-  }
 
 .project-link{
   margin: 30vh 0 20vh 0;
@@ -163,7 +128,7 @@ main{
   color: #3c3c3b;
 }
 .project-image-groß {
-  margin: 0;
+  margin: .6em 0 .25em 0;
   max-width: 600px;
 }
 .project-image-groß img {
@@ -172,13 +137,19 @@ main{
 }
 
 .banner{
-  position: fixed;
+  position: absolute;
   max-width: 70px;
-  margin-top: -45vh;
+  margin-top: 20vh;
   margin-left: 50%;
   margin-right: 3vh;
 }
 
+.project-image-groß:first-child {
+  margin-top: 20vh;
+}
+.project-image-groß:last-child {
+  margin-bottom: 20vh;
+}
 
 .imprint-privacy, .imprint-privacy a{
   max-width: 600px;
@@ -303,92 +274,9 @@ background-color: rgb(240, 240, 240);
 
 
 
-.portfolio{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
-    align-content: center;
-}
-.portfolio_wattwurmdesign{
-    padding: 0 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
-}
-.portfolio_kakerlakenpopo{
-    padding: 0 0 5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
-}
 
-.portfolio_kakerlakenpopo>.item, .portfolio_wattwurmdesign>.item{
-    max-width: 320px;
-    height: 190px;
-    padding: .5em;
-}
-.portfolio_kakerlakenpopo img{
-    filter: grayscale(100)
-}
-.portfolio_kakerlakenpopo img:hover{
-    filter: grayscale(0)
-}
-.portfolio .item{
-    padding: 0 2em 2em 0;
-    max-width: 500px;
-}
-.itemimage{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
 
-.box-items{
-    display: block;
-    position: initial;
-    display:flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    margin-left: 0em;
-}
-.linieBeschreibungRot{
-    padding-top: 3em;
-    border-bottom: 1px solid #f15a40;
-    border-width: 2px;
-    color:#f15a40;
-    font-family: 'avenir_book';
-    font-size: 24px;
-}
-.linieBeschreibung{
-    padding-top: 3em;
-    border-bottom: 1px solid #5b999e;
-    border-width: 2px;
-    color:#5b999e;
-    font-family: 'avenir_book';
-    font-size: 24px;
-}
 
-.linieBeschreibungRot a, .linieBeschreibung a{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.vertical{
-    transform: translateX(-3vw);
-    writing-mode: vertical-rl;
-    color: #f15a40;
-    background-color: #ececec;
-    font-family:'avenir_light';
-    font-size: 18px;
-    padding: 1em .2em 1em .4em ;
-}
 
 /* On smaller screens, decrease text size - ab 1000px umspringen*/
 @media only screen and (max-width: 1100px) {
@@ -400,6 +288,7 @@ header{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin: 0 2% 0 3%;
   flex-wrap: wrap;
 }
 h1{

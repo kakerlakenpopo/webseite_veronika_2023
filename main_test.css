@@ -38,7 +38,7 @@ header{
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 25vw;
 }
 h1 {
     margin-top: 0;
@@ -103,7 +103,7 @@ header a{
 .text{
   margin: 1em 0 1em 0;
   font-family: 'avenir_medium';
-  max-width: 500px;
+  max-width: 470px;
   text-align: left;
   color: #323232;
   line-height: 1.2;
@@ -115,36 +115,15 @@ header a{
 .text a{
   color: #3c3c3b;
   text-align: left;
-  text-decoration: underline;
 }
-
 main{
-  display: flex;
-  margin: 5em 0 0 0;
-  transform: translateX(15vw);
-  width: 80vw;
+  margin-top: 5em;
+  transform: translateX(25vw);
+  width: 75vw;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 }
-.main_projects{
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-.main_index{
-    margin-top: 5em;
-    transform: translateX(25vw);
-    width: 80vw;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-  .nextproject, .nextproject>a{
-      margin: 10vh 0 20vh 0;
-      font-family: 'circular_bold';
-      color: #3c3c3b;
-  }
 
 .project-link{
   margin: 30vh 0 20vh 0;
@@ -163,7 +142,7 @@ main{
   color: #3c3c3b;
 }
 .project-image-groß {
-  margin: 0;
+  margin: .6em 0 .25em 0;
   max-width: 600px;
 }
 .project-image-groß img {
@@ -172,13 +151,19 @@ main{
 }
 
 .banner{
-  position: fixed;
+  position: absolute;
   max-width: 70px;
-  margin-top: -45vh;
+  margin-top: 20vh;
   margin-left: 50%;
   margin-right: 3vh;
 }
 
+.project-image-groß:first-child {
+  margin-top: 20vh;
+}
+.project-image-groß:last-child {
+  margin-bottom: 20vh;
+}
 
 .imprint-privacy, .imprint-privacy a{
   max-width: 600px;
@@ -312,22 +297,14 @@ background-color: rgb(240, 240, 240);
     justify-content: flex-start;
     align-content: center;
 }
-.portfolio_wattwurmdesign{
-    padding: 0 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
-}
 .portfolio_kakerlakenpopo{
-    padding: 0 0 5em 0;
+    padding-bottom: 5em;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: flex-start;
 }
-
-.portfolio_kakerlakenpopo>.item, .portfolio_wattwurmdesign>.item{
+.portfolio_kakerlakenpopo .item{
     max-width: 320px;
     height: 190px;
     padding: .5em;
@@ -358,14 +335,6 @@ background-color: rgb(240, 240, 240);
     flex-wrap: wrap;
     margin-left: 0em;
 }
-.linieBeschreibungRot{
-    padding-top: 3em;
-    border-bottom: 1px solid #f15a40;
-    border-width: 2px;
-    color:#f15a40;
-    font-family: 'avenir_book';
-    font-size: 24px;
-}
 .linieBeschreibung{
     padding-top: 3em;
     border-bottom: 1px solid #5b999e;
@@ -374,8 +343,7 @@ background-color: rgb(240, 240, 240);
     font-family: 'avenir_book';
     font-size: 24px;
 }
-
-.linieBeschreibungRot a, .linieBeschreibung a{
+.linieBeschreibung a{
     font-size: 18px;
     font-weight: bold;
 }
