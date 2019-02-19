@@ -18,7 +18,7 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: #f0f0f0; /*br:ececec orangerot: f15a40  dark blue: 0B2D33, 0d363d*/
+    background-color: #0B2D33; /*br:ececec orangerot: f15a40  dark blue: 0B2D33, 0d363d*/
     margin: 0;
 }
 .textindex{
@@ -45,7 +45,7 @@ h1 {
     margin-top: 0;
   font-family: 'circular_bold';
   font-size: 50px;
-  color: #165762; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
+  color: #f15a40; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
 }
 h2{
   font-family: 'avenir_book';
@@ -59,7 +59,7 @@ header a{
   font-family: 'avenir_medium';
   font-size: 16px;
   text-decoration: none;
-  color: #0B2D33;
+  color: #5b999e;
 }
 .menu-collapsible {
   cursor: pointer;
@@ -101,22 +101,29 @@ header a{
   background-color: transparent;
 }
 
+.text, .text>p, p, p a, .text>a, .nextproject, .nextproject>a{
+  color: #5b999e;
+}
+.main_projects p{
+  color:#d8d8d8;
+}
+
 .text{
   margin: 1em 0 1em 0;
   font-family: 'avenir_medium';
   max-width: 500px;
   text-align: left;
-  color: #323232;
   line-height: 1.2;
 }
 .text>p, p{
   font-family: 'avenir_book';
-  color: #3c3c3b;
 }
 .text a{
-  color: #3c3c3b;
   text-align: left;
   text-decoration: underline;
+}
+.portfolio .text{
+  font-family: 'avenir_light';
 }
 
 main{
@@ -130,7 +137,6 @@ main{
 .main_projects{
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
   }
 .main_index{
     margin-top: 5em;
@@ -143,16 +149,15 @@ main{
   .nextproject, .nextproject>a{
       margin: 10vh 0 20vh 0;
       font-family: 'circular_bold';
-      color: #3c3c3b;
   }
 
 .project-link{
-  margin: 30vh 0 20vh 0;
+  margin: 10vh 0;
 }
 .project-link a{
+  color: #f15a40;
   font-family: "circular_bold";
-  font-size: 30px;
-  color: #ffffff;
+  font-size: 30px;;
 }
 .project-title{
   margin: 5vh 0 20vh 0;
@@ -179,12 +184,14 @@ main{
   margin-right: 3vh;
 }
 
-
+.imprint-privacy{
+  margin-top: 75vh;
+  position: fixed;
+}
 .imprint-privacy, .imprint-privacy a{
-  max-width: 600px;
-  margin-bottom: 20vh;
-  color: rgb(180, 180, 180);
+  color: #114650;
   font-family:"avenir_light";
+  font-size: 14;
   text-decoration: none;
 }
 .imprint-privacy a:hover{
@@ -214,7 +221,7 @@ main{
 }*/
 
 .border{
-  border-color: #323232;
+  border-color: #ffffff;
   border-width: 5px;
 }
 
@@ -311,15 +318,22 @@ main{
 }
 
 .vertical{
+  display: none;
     transform: translateX(-3vw);
     writing-mode: vertical-rl;
     color: #f15a40;
-    background-color: #f0f0f0;
+    background-color: #0B2D33;
     font-family:'avenir_light';
     font-size: 18px;
     padding: 1em .2em 1em .4em ;
 }
-
+.item img{
+  filter: grayscale(100%);
+}
+.item:hover .vertical, .item:hover img{
+  display:block;
+  filter: grayscale(0%);
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -411,7 +425,7 @@ main{
 header{
     transform: translateY(-8em);
     flex-direction: row;
-    background-color: #f0f0f0;
+    background-color: #0B2D33;
     width: 100%;
     padding-top: 3em;
 }

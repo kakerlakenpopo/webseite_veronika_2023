@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>veronika kaiping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>veronika<br>kaiping</h1>
+        </a>
+
+        <div class="menu">
+            <div class="menu-items"><a href="index.html">projects</a></div>
+            <div class="menu-items"><a href="about.html">about/contact</a></div>
+            <div class="menu-items"><a href="detour.html">detour</a></div>
+        </div>
+        <br>
+        <div class="imprint-privacy">
+            <a href="imprint.html">imprint/</a><br><a href="privacypolicy.html">privacy
+                policy</a>
+            <br><br>
+            &copy; 2019 Veronika Kaiping
+        </div>
+    </header>
+
+    <!-- <div class="main_index">
+        <div class="linieBeschreibungRot">
+            wattwurmdesign.de <a>&ndash; a design experiment</a>
+        </div>
+
+        <ul class="portfolio_wattwurmdesign">
+            <div class="textindex">
+                <a href="http://www.wattwurmdesign.de" style="color:#f15a40; text-decoration: underline">
+                    <h3>wattwurmdesign.de</h3>
+                </a>
+                <p>wattwurm design is a self initiated project in which I want to experiment with the time for a design
+                    and wether it is visible that it was created in one day, one month or half a year. The idea was
+                    created on november 27th in 2018 when I wondered </p>
+            </div>
+            <div class="textindex">
+                <h3><br></h3>
+                <p> why I always got scared of projects I had to do in
+                    my studies, especially finishing or sticking to them. This experiment will hopefully help me to
+                    create some techniques to structure my work or to realize
+                    how I work most efficient and fun.</p>
+            </div>
+            <li class="item">
+                <a href="http://www.wattwurmdesign.de" target="blank"><img src="dokumente/wattwurmdesign.jpg"
+                        style="width:100%"></a>
+            </li>
+        </ul>
+    </div>-->
+
+
+    <main>
+        <div class="main_projects">
+            <div class="project-link"><a href="https://wattwurmdesign.de/">www.wattwurmdesign.de</a></div>
+
+            <div class="text">
+                a design experiment
+                <p>
+                    wattwurm design is a self initiated project in which I want to experiment with the time for a
+                    design. I
+                    want to evaluate whether it is visible that a design was created in one day, one month or half a
+                    year.
+                    In november 2018 the idea was born when I wondered why I always got scared of projects I had to do
+                    in my studies,
+                    especially finishing or sticking to them. This experiment moght help me to create some
+                    techniques to structure my work or to realize how I work most efficient and fun.
+                    <br><br>
+                    The first attempt is to create a design in 24 hours from two random things &ndash; a need and an
+                    adjective.
+                    <br><br>
+                    Currently I keep myself busy with my thesis project &ndash; which is <a href="detour.html">this</a>
+                    'sticky' project &ndash; but I will
+                    continue when I need a break.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("menu-collapsible");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var collapsibleItems = this.nextElementSibling;
+                if (collapsibleItems.style.display === "block") {
+                    collapsibleItems.style.display = "none";
+                } else {
+                    collapsibleItems.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
