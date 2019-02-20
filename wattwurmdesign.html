@@ -15,7 +15,7 @@
         </a>
 
         <div class="menu">
-            <div class="menu-items"><a href="index.html">projects</a></div>
+            <div class="menu-items"><a href="index.html" class="underline">projects</a></div>
             <div class="menu-items"><a href="about.html">about/contact</a></div>
             <div class="menu-items"><a href="detour.html">detour</a></div>
         </div>
@@ -85,21 +85,12 @@
         </div>
     </main>
 
-    <script>
-        var acc = document.getElementsByClassName("menu-collapsible");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var collapsibleItems = this.nextElementSibling;
-                if (collapsibleItems.style.display === "block") {
-                    collapsibleItems.style.display = "none";
-                } else {
-                    collapsibleItems.style.display = "block";
-                }
-            });
-        }
-    </script>
+    <div class="imprint-privacy-mini">
+        <a href="imprint.html">imprint/</a><br><a href="privacypolicy.html">privacy
+            policy</a>
+        <br><br>
+        &copy; 2019 Veronika Kaiping
+    </div>
 </body>
 
 </html>

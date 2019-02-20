@@ -147,7 +147,7 @@ main{
     overflow: hidden;
   }
   .nextproject, .nextproject>a{
-      margin: 10vh 0 20vh 0;
+      margin: 8vh 0;
       font-family: 'circular_bold';
   }
 
@@ -188,14 +188,17 @@ main{
   margin-top: 75vh;
   position: fixed;
 }
-.imprint-privacy, .imprint-privacy a{
+.imprint-privacy, .imprint-privacy a, .imprint-privacy-mini, .imprint-privacy-mini a {
   color: #114650;
   font-family:"avenir_light";
   font-size: 14;
   text-decoration: none;
 }
-.imprint-privacy a:hover{
+.imprint-privacy a:hover, .imprint-privacy-mini a:hover{
   text-decoration: underline;
+}
+.imprint-privacy-mini{
+  display:none;
 }
 
 .project-gallery{
@@ -369,6 +372,9 @@ main{
 
 /* On smaller screens, decrease text size - ab 1000px umspringen*/
 @media only screen and (max-width: 800px) {
+  .imprint-privacy, .imprint-privacy a{
+    font-size: 12;
+  }
 .text {font-size: 14px}
 
 h1{
@@ -395,11 +401,26 @@ main{
     margin-top: -46vh;
     margin-left: 87%;
   }
+  .item img{
+    filter: grayscale(0);
+  }
+  .vertical, .item:hover img{
+    display:block;
+  }
 }
 
 
 
 @media only screen and (max-width: 500px) {
+.imprint-privacy{
+  display:none;
+}
+  .imprint-privacy-mini{
+    display: block;
+    margin:2em 0 2em 1em;
+    position: relative;
+  }
+
 iframe{
   max-width: 100%;
 }
@@ -435,7 +456,7 @@ header{
 .vertical{
     font-size: 14px;
 }
-.project-image-groß {
+.main_projects {
     padding-top: 3em;
 }
 
