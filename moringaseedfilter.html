@@ -9,17 +9,30 @@
 
 <body>
 
-    <header>
-        <a href="index.html">
-            <h1>veronika<br>kaiping</h1>
-        </a>
-
-        <div class="menu">
-                <div class="menu-items"><a href="index.html" class="underline">projects</a></div>
-                <div class="menu-items"><a href="about.html">about/contact</a></div>
-                <div class="menu-items"><a href="detour.html">detour</a></div>
-            </div>
-    </header>
+        <header>
+                <a href="index.html">
+                    <div class="desktop"><h1>veronika<br>kaiping</h1></div>
+                    <div class="mobil"><h1>v.k.</h1></div>
+                </a>
+        
+                <div class="menu">
+                    <div class="menu-items"><a href="index.html" class="underline">work</a></div>
+                    <div class="menu-items"><a href="detour.html">detour</a></div>
+                    <div class="menu-items"><a href="about.html">about</a></div> 
+                </div>
+                <br>
+                <div class="menu">
+                    <div class="menu-items"><a href="https://www.instagram.com/verofiziert/" target="blank">instagram</a><a>/</a><br><a href="mailto:Veronika.Kaiping@googlemail.com?subject=hi"
+                        target="blank">mail</a></div>
+                </div>
+                <br>
+                <div class="imprint-privacy">
+                    <a href="imprint.html">imprint/</a><br><a href="privacypolicy.html">privacy
+                        policy</a>
+                    <br><br>
+                    &copy; 2019<br>Veronika Kaiping
+                </div>
+            </header>
 
     <main>
         <div class="main_projects">
@@ -27,7 +40,8 @@
                     style="width:100%"></div>
 
             <div class="text">
-                moringa seed filter <a style="color: #f15a40; font-family:avenir_light; text-decoration: none"> &ndash; product design</a>
+                moringa seed filter <a style="color: #f15a40; font-family:avenir_light; text-decoration: none"> &ndash;
+                    product design</a>
                 <p>
                     As the Moringa tree grows in Nepal, it's seeds can be well used to purify water in that coutry. The
                     dried Moringa seeds, which can be extracted from the pods have to be dried and crushed before
@@ -80,28 +94,14 @@
             </div>
 
             <div class="project-image-groß"><video src="projekte/moringa_seed_filter/moringaseedfilter_video.mp4"
-                    autoplay loop style="width:100%"></div>
+                    autoplay loop style="width:900px"></div>
 
-            
         </div>
+
         <div class="nextproject"><a href="ort.html">next project &rarr;</a></div>
     </main>
 
-    <script>
-        var acc = document.getElementsByClassName("menu-collapsible");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var collapsibleItems = this.nextElementSibling;
-                if (collapsibleItems.style.display === "block") {
-                    collapsibleItems.style.display = "none";
-                } else {
-                    collapsibleItems.style.display = "block";
-                }
-            });
-        }
-    </script>
+    
 </body>
 
 </html>
