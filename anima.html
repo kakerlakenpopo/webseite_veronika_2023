@@ -1,6 +1,7 @@
 <html>
 
 <head>
+        <link rel="shortcut icon" type="image/x-icon" href="dokumente/favicon_color.png">
     <link rel="stylesheet" href="main.css">
     <script src="script.js"></script>
     <title>veronika kaiping</title>
@@ -9,30 +10,35 @@
 
 <body>
 
-        <header>
-                <a href="index.html">
-                    <div class="desktop"><h1>veronika<br>kaiping</h1></div>
-                    <div class="mobil"><h1>v.k.</h1></div>
-                </a>
-        
-                <div class="menu">
-                    <div class="menu-items"><a href="index.html" class="underline">work</a></div>
-                    <div class="menu-items"><a href="detour.html">detour</a></div>
-                    <div class="menu-items"><a href="about.html">about</a></div> 
-                </div>
-                <br>
-                <div class="menu">
-                    <div class="menu-items"><a href="https://www.instagram.com/verofiziert/" target="blank">instagram</a><a>/</a><br><a href="mailto:Veronika.Kaiping@googlemail.com?subject=hi"
-                        target="blank">mail</a></div>
-                </div>
-                <br>
-                <div class="imprint-privacy">
-                    <a href="imprint.html">imprint/</a><br><a href="privacypolicy.html">privacy
-                        policy</a>
-                    <br><br>
-                    &copy; 2019<br>Veronika Kaiping
-                </div>
-            </header>
+    <header>
+        <a href="index.html">
+            <div class="desktop">
+                <h1>veronika<br>kaiping</h1>
+            </div>
+            <div class="mobil">
+                <h1>v.k.</h1>
+            </div>
+        </a>
+
+        <div class="menu">
+            <div class="menu-items"><a href="index.html" class="underline">work</a></div>
+            <div class="menu-items"><a href="detour.html">detour</a></div>
+            <div class="menu-items"><a href="about.html">about</a></div>
+        </div>
+        <br>
+        <div class="menu">
+            <div class="menu-items"><a href="https://www.instagram.com/verofiziert/"
+                    target="blank">instagram</a><a>/</a><br><a href="mailto:Veronika.Kaiping@googlemail.com?subject=hi"
+                    target="blank">mail</a></div>
+        </div>
+        <br>
+        <div class="imprint-privacy">
+            <a href="imprint.html">imprint/</a><br><a href="privacypolicy.html">privacy
+                policy</a>
+            <br><br>
+            &copy; 2019<br>Veronika Kaiping
+        </div>
+    </header>
 
     <main>
         <div class="main_projects">
@@ -40,24 +46,28 @@
             </div>
 
             <div class="text">
+                <br>
+                <p>THE COR (LAT.: HEART, SOUL) IS THE NEW CENTERPIECE OF THE VEHICLE.</p>
+                <br>
                 The cor (lat.: heart, soul) is the new centerpiece of the vehicle.
                 <br>
-                <a style="color: #f15a40; font-family:avenir_light; text-decoration: none"> &ndash; concept development, interaction design</a>
+                <a style="color: #f15a40; font-family:avenir_light; text-decoration: none"> &ndash; concept development,
+                    interaction design</a>
                 <p>
                     With the COR especially sharing-user get the opportunity to connect to their vehicle in a new way.
                     The COR helps to strengthen the connection between human and machine by making it more personal,
-                    familiar and emotional.<br><br>
+                    familiar and emotional.
                     The COR is an adaptable learning system which is matched to the user by saving his_her personal
                     preferences. The preferences would include settings about the seat position, light, temperature and
-                    music.<br><br>
+                    music.
                     In comparison to the human nerve system both COR and dashboard react to the transfer of data with
-                    different light patterns.<br><br>
+                    different light patterns.
                     Every users data is stored stationary - without network connection - at home to provide data
-                    security.
-                    Due to that a regeneration of the COR can be done without problems if the COR gets lost.<br><br>
+                    security. Due to that, a regeneration of the COR can be done without problems if the COR gets lost.
                     In the future there will be the potential that the COR and its Dashboard will enter to peoples
-                    driving behavior and their emotion.
-                    This active and autonomous communication would increase the safety feeling while driving.
+                    driving behavior and their emotion. This active and autonomous communication would increase the
+                    feeling of safety while driving.
+
                 </p>
             </div>
 
@@ -73,10 +83,9 @@
                 <p>
                     This project was a cooperation project with the AUDI AG. Our class went to Ingolstadt to meet with
                     AUDI designers. In a workshop we developed first prototypes from found out everyday problems one has
-                    while traveling.
-                    We worked in teams of 4 (paul Oemichen, Caren this, Johanna Seifert). My role was mostly the story
-                    development and interaction element of the actual cor. For that I used the ARDUINO software to
-                    program interactions to the cor.
+                    while traveling. We worked in teams of 4 (paul Oemichen, Caren this, Johanna Seifert). My role was
+                    mostly the story development and interaction element of the actual cor. For that I used the ARDUINO
+                    software to program interactions to the cor.
                 </p>
             </div>
 
@@ -85,26 +94,11 @@
                 <img src="projekte/anima/kaiping_anima_workshop-1.jpg">
             </div>
 
-            
+
         </div>
-        <div class="nextproject"><a href="showerheand.html">next project &rarr;</a></div>
+        <div class="nextproject"><a href="ort.html">&larr; prev </a><a href="showerheand.html">next &rarr;</a></div>
     </main>
 
-    <script>
-        var acc = document.getElementsByClassName("menu-collapsible");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var collapsibleItems = this.nextElementSibling;
-                if (collapsibleItems.style.display === "block") {
-                    collapsibleItems.style.display = "none";
-                } else {
-                    collapsibleItems.style.display = "block";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>

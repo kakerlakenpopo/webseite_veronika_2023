@@ -220,7 +220,7 @@ main{
   max-width: 900px;
 }
 .project-gallery img{
-  padding: 1% 0em 1% 0;
+  padding: 1% 0% 1% 0;
   max-width: 49%; 
   max-height: auto;
   flex-grow: 1;
@@ -228,6 +228,14 @@ main{
 .project-gallery img:nth-child(odd){
   padding: 1% 1% 1% 0;
 }
+
+/*.project-gallery iframe{
+  padding: 1% 0 1% 0;
+  flex-grow: 1;
+}
+.project-gallery iframe:nth-child(odd){
+  padding: 1% 1% 1% 0;
+}*/
 
 .project-gallery img:hover{
   transform: scale(2.5);
@@ -272,11 +280,12 @@ main{
     justify-content: flex-start;
 }
 .portfolio_kakerlakenpopo{
-    padding: 0 0 5em 0;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .portfolio_kakerlakenpopo>.item, .portfolio_wattwurmdesign>.item{
@@ -310,7 +319,6 @@ main{
     right: 0;
     height: 100%;
     width: 101%;
-    
     transition: .5s ease-in-out;
     background: -webkit-repeating-linear-gradient(#ffffff, #ffffff 20%, #ffffff00 10.1%, #ffffff00 100%);
   }
@@ -321,13 +329,22 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     transition: .5s ease-in-out;
-    background-color: #f15b4094; /*165762*/
+    background-color: #16576262; /*165762*/
   }
-  .item:nth-child(1n) .colorbox{
-    background-color: #16576262;
+  .colorbox_kakerlakenpopo{
+    opacity: 1;
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: inherit;
+    transition: .5s ease-in-out;
+    background-color: #16576262; /*165762*/
   }
 
 
@@ -560,6 +577,9 @@ header{
     margin: 0;
     padding: 2em 1em 1em 1em;
 }
+.nextproject a{
+  margin: 0;
+}
 .vertical{
     font-size: 14px;
 }
@@ -578,6 +598,24 @@ header{
 }
 .portfolio .item{
     padding: 0 0em 1em 0;
+}
+.textindex {
+   padding: 0;
+}
+.textindex {
+  padding: .5em;
+  width: 100%;
+}
+.portfolio_kakerlakenpopo>.item {
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 1em 0;
+}
+.project-link {
+  margin: 0em 0 2em 1em;
+}
+.project-link a {
+  font-size: 22px;
 }
 
 
