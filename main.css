@@ -283,6 +283,23 @@ main{
 }
 
 
+.detour_flex_row{
+  flex-direction: row;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.detour_flex_column{
+  padding: 0 0 0 0;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+}
 
 .portfolio{
     margin: 0;
@@ -293,13 +310,7 @@ main{
     justify-content: flex-end;
     align-content: center;
 }
-.portfolio_wattwurmdesign{
-    padding: 0 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
-}
+
 .portfolio_kakerlakenpopo{
     padding: 0 0 0 0;
     margin-bottom: 0;
