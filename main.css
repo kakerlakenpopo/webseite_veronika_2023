@@ -14,6 +14,16 @@
   object-fit: cover;
 }*/
 
+
+
+.papierkram{
+  max-width: 600px;
+}
+.papierkram h2, .papierkram h3{
+  color: #555555;
+  font-family: 'avenir_book';
+}
+
 a{
     text-decoration: none;
 }
@@ -26,7 +36,7 @@ body{
     font-family: 'avenir_medium';
     width: 320px;
     text-align: left;
-    color: #0096b1;
+    color: #555555;
     line-height: 1.2;
   }
 html {
@@ -45,7 +55,7 @@ h1 {
     margin-top: 0;
   font-family: 'stratos';
   font-size: 50px;
-  color: #ff7400; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
+  color: #FFB725; /*dunkelblau 165762  hellblau:5b999e  gelb:f29e00*/
 }
 .desktop{
     display:block;
@@ -66,7 +76,7 @@ header a{
   
   font-size: 20px;
   text-decoration: none;
-  color: #0096b1;
+  color: #555555;
 }
 .menu-collapsible {
   cursor: pointer;
@@ -88,14 +98,14 @@ header a{
   outline: none;
 }
 .menu-collapsible a:hover, .menu-link a:hover, .menu-items>a:hover{
-  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 65%, #ff7400 60.1%, #ff7400 100%);
-  text-decoration-color: #ff7400;
-  border-bottom: 2px solid #ff7400;
+  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 65%, #FFB725 60.1%, #FFB725 100%);
+  text-decoration-color: #FFB725;
+  border-bottom: 2px solid #FFB725;
 }
 .underline{
-  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 65%, #ff7400 60.1%, #ff7400 100%);
-  text-decoration-color: #ff7400;
-  border-bottom: 2px solid #ff7400;
+  background: -webkit-repeating-linear-gradient(#ffffff00, #ffffff00 65%, #FFB725 60.1%, #FFB725 100%);
+  text-decoration-color: #FFB725;
+  border-bottom: 2px solid #FFB725;
 }
 .collapsibleItems {
   padding: 0 20px;
@@ -108,11 +118,11 @@ header a{
   background-color: transparent;
 }
 
-.text, .text>p, p, p a, .text>a, .nextproject, .nextproject>a{
-  color: #0096b1;
+.text, .text>p, p, p a, /*.text>a,*/ .nextproject, .nextproject>a{
+  color: #555555;
 }
 .main_projects p{
-  color:#0096b1;
+  color:#555555;
 }
 .overlay .text{
     margin: .5em 0 0em .5em;
@@ -170,7 +180,7 @@ main{
   margin: 10vh 0;
 }
 .project-link a{
-  color: #ff7400;
+  color: #FFB725;
   font-family: "stratos";
   font-size: 30px;;
 }
@@ -203,7 +213,7 @@ main{
   left: 2em;
 }
 .imprint-privacy, .imprint-privacy a, .imprint-privacy-mini, .imprint-privacy-mini a {
-  color: #0096b1;
+  color: #555555;
   font-family:"avenir_light";
   font-size: 18px;
   text-decoration: none;
@@ -333,7 +343,7 @@ main{
 }
 .portfolio .item{
     padding: 0 2em 2em 0;
-    max-width: 38vw;
+    max-width: 35vw;
 }
 .itemimage{
     overflow: hidden;
@@ -364,7 +374,7 @@ main{
     height: inherit;
     width: inherit;
     transition: .5s ease-in-out;
-    background-color: #0096b162; /*165762*/
+    background-color: #ffffff00; /*165762*/
   }
   .colorbox_kakerlakenpopo{
     opacity: 1;
@@ -376,7 +386,7 @@ main{
     height: inherit;
     width: inherit;
     transition: .5s ease-in-out;
-    background-color: #0096b162; /*165762*/
+    background-color: #ffffff00; /*165762*/
   }
 
 
@@ -393,9 +403,9 @@ main{
 }
 .linieBeschreibungRot{
     padding-top: 3em;
-    border-bottom: 1px solid #ff7400;
+    border-bottom: 1px solid #FFB725;
     border-width: 2px;
-    color:#ff7400;
+    color:#FFB725;
     font-family: 'avenir_book';
     font-size: 24px;
 }
@@ -636,7 +646,10 @@ header{
   font-size: 22px;
 }
 
-
+.yellowx{
+  color: #FFB725 !important;
+  font-family: "avenir_light";
+  text-decoration: none;
 }
 
 
