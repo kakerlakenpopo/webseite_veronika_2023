@@ -118,9 +118,7 @@ header a{
   background-color: transparent;
 }
 
-.text, .text>p, p, p a, /*.text>a,*/ .nextproject, .nextproject>a{
-  color: #555555;
-}
+
 .main_projects p{
   color:#555555;
 }
@@ -238,6 +236,37 @@ main{
 .project-gallery img:nth-child(odd){
   padding: 1% 1% 1% 0;
 }
+
+/* .text, .text>p, p, p a, .text>a, .nextproject, .nextproject>a{
+  color: #555555;
+} */
+
+.nextproject{
+  color: #555555;
+}
+
+.text {
+  color: #555555;
+}
+
+.text p {
+  color: #555555;
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+}
+
+
+.yellow{
+  color: #FFB725 ;
+  font-family: "avenir_light";
+  text-decoration: none !important;
+}
+
+
+
 
 /*.project-gallery iframe{
   padding: 1% 0 1% 0;
@@ -646,11 +675,7 @@ header{
   font-size: 22px;
 }
 
-.yellowx{
-  color: #FFB725 !important;
-  font-family: "avenir_light";
-  text-decoration: none;
-}
+
 
 
 @media only screen and (max-width: 375px) {
