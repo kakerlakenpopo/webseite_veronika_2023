@@ -17,16 +17,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Runs a set of commands using the runners shell
     
-    # 1. Go into GitHub Actions _work directory ($GITHUB_WORKSPACE)
-    # 2. Copy all files from there to web server root (~/html)
-      # -r flag to copy directories recursively
-      # -u flag to skip files that have not changed
-      # * means all files and directories
-      # -t ~/html defines the target directory
-    - name: Copy files to web server root (html directory)
-      run: |
-        cd $GITHUB_WORKSPACE
-        cp -r -u * -t ~/html
+    # Sync all files from GitHub Actions _work directory to web server root (html directory)
+      # -a flag to sync subdirectories and keep permissions
+      # --delete flag to delete files that are not present in the source directory
+    - name: Sync files to web server root
+      run: rsync -a --delete $GITHUB_WORKSPACE ~/html
