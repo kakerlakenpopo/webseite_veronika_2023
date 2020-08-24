@@ -397,6 +397,7 @@ a {
     transition: .5s ease-in-out;
     background: -webkit-repeating-linear-gradient(#ffffff, #ffffff 20%, #ffffff00 10.1%, #ffffff00 100%);
   }
+
   .colorbox{
     opacity: 1;
     position: absolute;
@@ -409,6 +410,7 @@ a {
     transition: .5s ease-in-out;
     background-color: #ffffff00; /*165762*/
   }
+
   .colorbox_kakerlakenpopo{
     opacity: 1;
     position: inherit;
