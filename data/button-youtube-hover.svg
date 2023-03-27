@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g>
+        <rect x="0" y="0" width="100" height="100" style="fill:none;"/>
+        <g transform="matrix(0.550427,0.834883,-0.834883,0.550427,15.1419,65.4947)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">y</text>
+        </g>
+        <g transform="matrix(0.809248,0.587468,-0.587468,0.809248,22.8097,76.7841)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">o</text>
+        </g>
+        <g transform="matrix(0.96319,0.268824,-0.268824,0.96319,33.9989,84.6057)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">u</text>
+        </g>
+        <g transform="matrix(0.993941,-0.109917,0.109917,0.993941,47.231,88.1797)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">t</text>
+        </g>
+        <g transform="matrix(0.900998,-0.433822,0.433822,0.900998,60.7909,86.5692)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">u</text>
+        </g>
+        <g transform="matrix(0.696761,-0.717303,0.717303,0.696761,72.9413,80.4055)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">b</text>
+        </g>
+        <g transform="matrix(0.39281,-0.91962,0.91962,0.39281,82.2105,70.4105)">
+            <text x="0px" y="0px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:20.833px;fill:rgb(221,143,104);">e</text>
+        </g>
+        <path d="M73.851,27.983C73.154,25.014 70.396,21.988 67.384,21.515C60.511,20.438 39.488,20.438 32.616,21.515C29.604,21.988 26.845,25.014 26.149,27.983C25.071,32.578 25.071,44.492 26.149,49.088C26.845,52.056 29.604,55.083 32.616,55.555C39.488,56.633 60.511,56.633 67.384,55.555C70.396,55.083 73.154,52.056 73.851,49.088C74.929,44.492 74.929,32.578 73.851,27.983ZM62.725,38.242L43.947,48.929L43.947,27.556L62.725,38.242Z" style="fill:rgb(221,143,104);stroke:rgb(221,143,104);stroke-width:2.9px;"/>
+    </g>
+</svg>

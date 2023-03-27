@@ -1,50 +1,39 @@
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+
+//onload
+function homeScroll() {
+  document.documentElement.style.scrollBehavior = "auto";
+  const element = document.getElementById("home");
+  element.scrollIntoView();
+  document.documentElement.style.scrollBehavior = "smooth";
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+//getting modal opening buttons
+var modalBtns = document.querySelectorAll('.modal-open');
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+modalBtns.forEach(function (btn) {
+  btn.onclick = function () {
+    var modal = btn.getAttribute('data-modal');
 
-
-var item = document.getElementsByClassName("item");
-  var img = item.getElementsByTagName('img')[0];
-
-  document.getElementsByClassName("item").style.display = 'none';
-  
-function enlarge() {
-  
-
-
-  if (event.target.style.width == '100%') {
-
-    event.target.style.width = '200%';
-    event.target.style.position = "relative";
-    event.target.style.zIndex = "1";
+    document.getElementById(modal).style.display = "block";
+    document.body.style.overflow = "hidden";
     
-  } else {
-    event.target.style.width = '100%';
-    event.target.style.position = "relative";
-    event.target.style.zIndex = "0";
-  }
+  };
+});
 
+
+var closeBtns = document.querySelectorAll('.modal-close');
+
+closeBtns.forEach(function (btn) {
+  btn.onclick = function () {
+    var modal = btn.closest('.modal').style.display = 'none';
+    document.body.style.overflow = "";
+  }
+})
+
+window.onclick = function (e) {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+    document.body.style.overflow = "";
+  }
 }

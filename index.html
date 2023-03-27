@@ -1,164 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="/dokumente/favicon.png">
-    <link rel="stylesheet" href="/main.css">
-    <script src="/script.js"></script>
-    <title>veronika kaiping &ndash; integrated designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>veronika kaiping – ceramics & illustration</title>
+
+  <meta name="description" content="Illustrations and slow made Ceramics by Veronika Kaiping."/>
+  <meta name="keywords" content="illustration, ceramic, keramik, slow, art, dessau, osnabrück, design, vorort, tonstudio, kaiping, veronika"/>
+  <meta name="author" content="Veronika Kaiping" />
+  <meta name="copyright" content="Veronika Kaiping"/>
+
+  <meta name="robots" content="index"/>
+  
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NQPYS3EFN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6NQPYS3EFN');
+</script>
+
 </head>
 
-<body>
+<body onload="homeScroll()">
 
-        <header>
-                <a href="/">
-                    <div class="desktop"><h1>veronika<br>kaiping</h1></div>
-                    <div class="mobil"><h1>v.k.</h1></div>
-                </a>
-        
-                <div class="menu">
-                    <div class="menu-items"><a href="/" class="underline">work</a></div>
-                    <div class="menu-items"><a href="/about">about</a></div> 
-                </div>
-                <br>
-                <div class="menu">
-                    <div class="menu-items"><a href="https://www.instagram.com/verofiziert/"
-                        target="blank">instagram</a></div>
-                </div>
-                <br>
-                <div class="imprint-privacy">
-                    <a href="/imprint">imprint/</a><br><a href="/privacy">privacy
-                        policy</a>
-                    <br><br>
-                    &copy; 2021<br>Veronika Kaiping
-                </div>
-            </header>
-
-    <div class="main_index">
-
-        <ul class="portfolio">
+  <header>
+    <div class="logo">
+      <a href="#home">
+        <img src="data/logo-k.svg" style="width:2.5%"> <!--8%-->
+      </a>
+    </div>
+  </header>
 
 
-                <li class="item">
-                        <a href="/walz-design">
-                            <div class="itemimage">
-                                <img src="/projekte/walz-design/walz-design_header.png" style="width:100%">
-                                <div class="colorbox"></div>
-                                <div class="overlay">
-                                    <div class="text">
-                                        <h3>walz.design</h3>UX design & UI design / 2019
-                                    </div>
-                                </div>
-        
-                            </div>
-                        </a>
-                    </li>
+  <!--
+  O   O         O         O     O
+  O   O         O         O     O
+  O   O         O         O     O
+  O   O         O         O     O
+  O   O         O         O     O
+  O   OOOOOOO   OOOOOOO   OOOOOOO
+-->
+  <!--Modal Buttons/Projects-->
+  <!-- ILLUSTRATION -->
+  <div class="projects illustration-design" id="top">
 
-                    <li class="item">
-                            <a href="/wattwurmdesign">
-                                <div class="itemimage">
-                                    <img src="/projekte/wattwurmdesign/wattwurmdesign_mockup_header.png" style="width:100%">
-                                    <div class="colorbox"></div>
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <h3>wattwurmdesign</h3>web development & integrated design / est. 2018
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+    <!-- HOW DESIGNERS THINK -->
+    <button class="modal-open content-big" data-modal="modal_howDesignersThink" id="howDesignersThink">
+      <img src="illustration/kaiping_HowDesignersThink_cover.png">
+      <div class="overlay">
+        <img src="illustration/kaiping_HowDesignersThink_hover.png">
+      </div>
+    </button>
 
-            <li class="item">
-                <a href="/cloud">
-                    <div class="itemimage">
-                        <img src="/projekte/cloud/kaiping_cloud.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>[cloud]</h3>service design & visual communication / 2016 &dash; 2019
-                            </div>
-                        </div>
+    <!-- HOLZGARAGE -->
+    <button class="modal-open content-big" data-modal="modal_holzgarage" id="holzgarage">
+      <img src="illustration/kaiping_holzgarage_cover.png">
+      <div class="overlay">
+        <img src="illustration/kaiping_holzgarage_hover.jpg">
+      </div>
+    </button>
 
-                    </div>
-                </a>
-            </li>
+    <!-- PUPOSE -->
+    <button class="modal-open content-big" data-modal="modal_purpose" id="purpose">
+      <img src="illustration/kaiping_purpose_cover.jpg">
+      <div class="overlay">
+        <img src="illustration/kaiping_purpose_hover.jpg">
+      </div>
+    </button>
 
-            <li class="item">
-                    <a href="/purpose">
-                        <div class="itemimage">
-                            <img src="/projekte/purpose/purpose_title.jpg" style="width:100%">
-                            <div class="colorbox"></div>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h3>purpose changes everything</h3>illustration / 2019
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+    <!-- PERIOD ZINE -->
+    <button class="modal-open content-big" data-modal="modal_periodZine" id="periodZine">
+      <img src="illustration/kaiping_period_cover.JPG">
+      <div class="overlay">
+        <img src="illustration/kaiping_period_hover_gif.gif">
+      </div>
+    </button>
+
+    <!-- WOMAN -->
+    <button class="modal-open content-big" data-modal="modal_woman" id="woman">
+      <img src="illustration/kaiping_woman_1.JPG">
+      <div class="overlay">
+        <img src="illustration/kaiping_woman_2_hover.JPG">
+      </div>
+    </button>
+
+    <!-- BOAT -->
+    <button class="modal-open content-big" data-modal="modal_boat" id="boat">
+      <img src="illustration/kaiping_boat_cover.PNG">
+      <div class="overlay">
+        <img src="">
+      </div>
+    </button>
+
+    <!-- NEW YEAR -->
+    <button class="modal-open content-big" data-modal="modal_newYear" id="newYear">
+      <img src="illustration/kaiping_newYear_2023.png">
+      <div class="overlay">
+        <img src="">
+      </div>
+    </button>
+
+    <!-- ADVENTSMARKT -->
+    <button class="modal-open content-big" data-modal="modal_adventsmarkt" id="adventsmarkt">
+      <img src="illustration/kaiping_adventsmarkt_1.JPG">
+      <div class="overlay">
+        <img src="">
+      </div>
+    </button>
+
+    <!-- LIVE DRAWING -->
+    <button class="modal-open content-big" data-modal="modal_liveDrawing" id="liveDrawing">
+      <img src="illustration/kaiping_liveDrawing_cover.png">
+      <div class="overlay">
+        <img src="illustration/kaiping_liveDrawing_hover.png">
+      </div>
+    </button>
+
+    <!-- HOMES -->
+    <button class="modal-open content-big" data-modal="modal_homes" id="homes">
+      <img src="illustration/kaiping_homes_fish.JPG">
+      <div class="overlay">
+        <img src="illustration/kaiping_homes_hover.JPG">
+      </div>
+    </button>
+
+    <!-- EIN FUSS -->
+    <button class="modal-open content-big" data-modal="modal_einFuss" id="einFuss">
+      <img src="illustration/kaiping_einFuss_cover.jpg">
+      <div class="overlay">
+        <img src="illustration/kaiping_einFuss_hover.jpg">
+      </div>
+    </button>
+
+    <!-- BOOBS -->
+    <button class="modal-open content-big" data-modal="modal_boobs" id="boobs">
+      <img src="illustration/kaiping_boobs_cover.png">
+      <div class="overlay">
+        <img src="illustration/kaiping_boobs_2.png">
+      </div>
+    </button>
+
+    <!-- OBSTACLES -->
+    <button class="modal-open content-big" data-modal="modal_obstacles" id="obstacles">
+      <img src="illustration/kaiping_obstacles_1.JPG">
+      <div class="overlay">
+        <img src="illustration/kaiping_obstacles_2.png">
+      </div>
+    </button>
+
+    <!-- FEELINGS -->
+    <button class="modal-open content-big" data-modal="modal_feelings" id="feelings">
+      <img src="illustration/kaiping_feelings_1.png">
+      <div class="overlay">
+        <img src="">
+      </div>
+    </button>
 
 
 
-         <!-- <li class="item">
-                    <a href="/projektfenster">
-                        <div class="itemimage">
-                            <img src="/projekte/projektfenster/kaiping_projektfenster_bahnhof.jpg" style="width:100%">
-                            <div class="colorbox"></div>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h3>#projektfenster</h3>service design & visual communication/ since 2018
-                                </div>
-                            </div>
-    
-                        </div>
-                    </a>
-                </li> -->
 
 
-                <li class="item">
-                    <a href="/brett">
-                        <div class="itemimage">
-                            <img src="/projekte/brett/kaiping_brett_full.jpg" style="width:100%">
-                            <div class="colorbox"></div>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h3>b|r|ett</h3>product design / 2018
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                
-                <li class="item">
-                    <a href="/megabye">
-                        <div class="itemimage">
-                            <img src="/projekte/megabye/Mockup_klein.png" style="width:100%">
-                            <div class="colorbox"></div>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h3>megabye</h3>graphic design / 2016
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-            <li class="item">
-                <a href="/variations">
-                    <div class="itemimage">
-                        <img src="/projekte/variations/kaiping_variations_photo.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>variations<sup>n</sup></h3>product design / 2016
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-            </li>
+  </div>
+  </div>
 
 
 
@@ -167,159 +178,1651 @@
 
 
 
-            <li class="item">
-                <a href="/moringa-seed-filter">
-                    <div class="itemimage">
-                        <img src="/projekte/moringa_seed_filter/kaiping_moringaseedfilter.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>moringa seed filter</h3>product design / 2017
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="/ort">
-                    <div class="itemimage">
-                        <img src="/projekte/ORT/kaiping_ort_colour.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>ORT</h3>social design / 2017
-                            </div>
-                        </div>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="/db-leitsystem">
-                    <div class="itemimage">
-                        <img src="/projekte/DB_Leitsystem/kaiping_db-leisystem.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>DB-Leitsystem</h3>interaction design / 2018
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="/cor">
-                    <div class="itemimage">
-                        <img src="/projekte/anima/kaiping_anima_rendering.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>cor</h3>concept development & interaction design / 2018
-                            </div>
-                        </div>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="/showerheand">
-                    <div class="itemimage">
-                        <img src="/projekte/showerheand/kaiping_showerheand_rendering.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>showerheand</h3>product design / 2017
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
 
 
 
 
-                <li class="item">
-                    <a>
-                        <div class="itemimage">
-                            <img src="/dokumente/spaceholder_.png" style="width:100%">
-                    </a>
-                </li>
 
 
-        </ul>
+  <!-- HOME -->
+  <div class="home" id="home">
 
+    <img src="data/background.png" class="home-img">
 
-        <ul class="portfolio">
+    <div class="content-home">
 
-            <li class="item">
-                <a href="/products">
-                    <div class="itemimage">
-                        <img src="/projekte/kakerlakenpopo/messerblock/kaiping_messerblock.jpg" style="width:100%">
-                        <div class="colorbox"></div>
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>products</h3>product design / est. 2016
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="item">
-                    <a href="/illustrations">
-                        <div class="itemimage">
-                            <img src="/projekte/illustrations/illustration_wimmel_header_klein.jpg" style="width:100%">
-                            <div class="colorbox"></div>
-                            <div class="overlay">
-                                <div class="text">
-                                    <h3>illustrations</h3>illustration
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <li class="item">
-                        <a href="/photos">
-                            <div class="itemimage">
-                                <img src="/projekte/photos/digital_1_header_klein.png" style="width:100%">
-                                <div class="colorbox"></div>
-                                <div class="overlay">
-                                    <div class="text">
-                                        <h3>photos</h3>photography
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="item">
-                        <a href="/jewellery/index.html">
-                            <div class="itemimage">
-                                <img src="/projekte/jewellery/header_small.JPG" style="width:100%">
-                                <div class="colorbox"></div>
-                                <div class="overlay">
-                                    <div class="text">
-                                        <h3>jewellery</h3>silversmithing
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-        </ul>
-
-        <div class="imprint-privacy-mini">
-            <a href="/imprint">imprint/</a><br><a href="/privacy">privacy
-                policy</a>
-            <a>&copy; 2021 Veronika Kaiping</a>
-        </div>
+      <div class="project-home">
+        <!--<a>illustration project</a>-->
+        <p>
+          Welcome! <br>
+          Scroll up or down.☻
+          <br><br>
+          ▷ SPRING MARKET: 1st April @Wolfgangstraße 13, Dessau
+        </p>
+      </div>
+      <!--embed the most viewed video: embed?listType=playlist&list=UULP (P=popular / F=frequent)-->
+      <div class="YouTube">
+        <iframe src="https://www.youtube.com/embed?listType=playlist&list=UULPeGyG5vzC-zhINraKJletxg"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <!--<a>watch my latest video here</a>-->
+      </div>
 
     </div>
 
+
+
+    <!--website disclaimer for mobile -->
+    <div class="mobile-note">
+      <a>Wanna see everything? Switch to desktop :)</a>
+    </div>
+
+
+    <div class="buttons-home">
+      <button class="button">
+        <a href="/about.html">
+          <div class="button-about"></div>
+        </a>
+      </button>
+      <button class="button">
+        <a href="https://www.youtube.com/@verofiziert">
+          <div class="button-youtube"></div>
+        </a>
+      </button>
+      <button class="button">
+        <a href="https://www.etsy.com/de/shop/veronikakaiping">
+          <div class="button-shop"></div>
+        </a>
+      </button>
+
+    </div>
+
+    <div class="topic-illustration-design">
+      <div class="button-illustration-design">
+        <a href="#top"><img src="data/oben.svg" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="topic-ceramic-crafts">
+      <div class="button-ceramic-crafts">
+        <a href="#bottom"><img src="/data/unten.svg" style="width:100%"></a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- CERAMIC -->
+  <div class="projects ceramic-crafts" id="bottom">
+
+    <!-- TONSTUDIO -->
+    <button class="modal-open content-big" data-modal="modal_tonstudio" id="tonstudio">
+      <img src="ceramic/kaiping_tonstudio_1.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_tonstudio_hover.png">
+      </div>
+    </button>
+
+    <!-- BOWLS -->
+    <button class="modal-open content-big" data-modal="modal_bowls" id="bowls">
+      <img src="ceramic/kaiping_bowls_cover.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_bowls_hover.jpg">
+      </div>
+    </button>
+
+    <!-- CUFFLINGS -->
+    <button class="modal-open content-big" data-modal="modal_cufflings" id="cufflings">
+      <img src="ceramic/kaiping_cufflings_header.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_cufflings_hover.JPG">
+      </div>
+    </button>
+
+    <!-- CUPS -->
+    <button class="modal-open content-big" data-modal="modal_cups" id="cups">
+      <img src="ceramic/kaiping_cups_cover.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_cups_hover.JPG">
+      </div>
+    </button>
+
+    <!-- DUDE SPOONS -->
+    <button class="modal-open content-big" data-modal="modal_dudeSpoons" id="dudeSpoons">
+      <img src="ceramic/kaiping_dudeSpoons_hover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_dudeSpoons_cover.JPG">
+      </div>
+    </button>
+
+    <!-- FRUITBOWL -->
+    <button class="modal-open content-big" data-modal="modal_fruitbowl" id="fruitbowl">
+      <img src="ceramic/kaiping_fruitbowl_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_fruitbowl_hover.jpg">
+      </div>
+    </button>
+
+    <!-- KLOTOPF -->
+    <button class="modal-open content-big" data-modal="modal_klotopf" id="klotopf">
+      <img src="ceramic/kaiping_klotopf_cover.png">
+      <div class="overlay">
+        <img src="ceramic/kaiping_klotopf_hover.jpg">
+      </div>
+    </button>
+
+    <!-- DUDE MUG -->
+    <button class="modal-open content-big" data-modal="modal_mugDude" id="mugDude">
+      <img src="ceramic/kaiping_mugDude_cover.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_mugDude_2.JPG">
+      </div>
+    </button>
+
+    <!-- MUGS -->
+    <button class="modal-open content-big" data-modal="modal_mugs" id="mugs">
+      <img src="ceramic/kaiping_mugs_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_mugs_hover.jpg">
+      </div>
+    </button>
+
+    <!-- NOSE PIN -->
+    <button class="modal-open content-big" data-modal="modal_nosePin" id="nosePin">
+      <img src="ceramic/kaiping_nosePin_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_nosePin_hover.JPG">
+      </div>
+    </button>
+
+    <!-- PINS -->
+    <button class="modal-open content-big" data-modal="modal_pins" id="pins">
+      <img src="ceramic/kaiping_pins_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_pins_hover.jpg">
+      </div>
+    </button>
+
+    <!-- PINSEL -->
+    <button class="modal-open content-big" data-modal="modal_pinsel" id="pinsel">
+      <img src="ceramic/kaiping_pinsel_1.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_pinsel_3.jpg">
+      </div>
+    </button>
+
+    <!-- PLATES -->
+    <button class="modal-open content-big" data-modal="modal_plates" id="plates">
+      <img src="ceramic/kaiping_plate_popel.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_plate_dude_1.JPG">
+      </div>
+    </button>
+
+    <!-- SPOONS -->
+    <button class="modal-open content-big" data-modal="modal_spoons" id="spoons">
+      <img src="ceramic/kaiping_spoons_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_spoons_hover.jpg">
+      </div>
+    </button>
+
+    <!-- SPOONS BLUE -->
+    <button class="modal-open content-big" data-modal="modal_spoonsBlue" id="spoonsBlue">
+      <img src="ceramic/kaiping_spoonsBlue_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_spoonsBlue_hover.jpg">
+      </div>
+    </button>
+
+    <!-- TEAPOT -->
+    <button class="modal-open content-big" data-modal="modal_teapot" id="teapot">
+      <img src="ceramic/kaiping_teapot_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_teapot_hover.jpg">
+      </div>
+    </button>
+
+    <!-- TIP JAR -->
+    <button class="modal-open content-big" data-modal="modal_tipjar" id="tipjar">
+      <img src="ceramic/kaiping_tipJar_cover.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_tipJar_hover.JPG">
+      </div>
+    </button>
+
+    <!-- TOOTHBRUSH -->
+    <button class="modal-open content-big" data-modal="modal_toothbrush" id="toothbrush">
+      <img src="ceramic/kaiping_toothbrush.JPG">
+      <div class="overlay">
+        <img src="">
+      </div>
+    </button>
+
+    <!-- VASE -->
+    <button class="modal-open content-big" data-modal="modal_vase" id="vase">
+      <img src="ceramic/kaiping_vase_cover.JPG">
+      <div class="overlay">
+        <img src="ceramic/kaiping_vase_hover.jpg">
+      </div>
+    </button>
+
+    <!-- WHALE -->
+    <button class="modal-open content-big" data-modal="modal_whale" id="whale">
+      <img src="ceramic/kaiping_whale_cover.jpg">
+      <div class="overlay">
+        <img src="ceramic/kaiping_whale_hover.jpg">
+      </div>
+    </button>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+    <button class="footer-text" data-modal="privacy">
+      <a href="imprint.html">imprint</a>
+    </button>
+    <button class="footer-text" data-modal="index">
+      <a href="privacy.html">privacy policy</a>
+    </button>
+    <button class="footer-text" data-modal="index">
+      <a>©2023 Veronika Kaiping</a>
+    </button>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup {
+        margin: 0;
+        padding: 0;
+        background: 0;
+        clear: left;
+        font: 16px 'Courier New';
+        color: white;
+        width: 400px;
+      }
+
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+      <form
+        action="https://veronikakaiping.us21.list-manage.com/subscribe/post?u=553da1b2935b2bc6968d6d465&amp;id=8aa0da63c6&amp;f_id=0008dbe1f0"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+        <div id="mc_embed_signup_scroll">
+
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"><a><b>NEWSLETTER</b> – Stay in touch to know about upcoming shop updates and
+                events.</a>
+            </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+          </div>
+          <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_553da1b2935b2bc6968d6d465_8aa0da63c6" tabindex="-1" value=""></div>
+          <div class="optionalParent">
+            <div class="clear foot">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+O     O      OOO      OOOOO          O        O
+OO   OO     O   O     O    O        O O       O
+O O O O    O     O    O     O      O   O      O
+O  O  O   O       O   O      O    O     O     O
+O     O    O     O    O     O    OOOOOOOOO    O
+O     O     O   O     O    O    O         O   O
+O     O      OOO      OOOOO    O           O  OOOOOOOO
+-->
+
+  <!--Modal HOW DESIGNERS THINK-->
+  <div class="modal" id="modal_howDesignersThink">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">How designers think
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <iframe id="myiframe" src="iframe-how.html" width="100%"></iframe>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Modal Holzgarage-->
+  <div class="modal" id="modal_holzgarage">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Holzgarage
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Holzgarage is an open workshop for learning and making mistakes together. Working as a self-organised and
+            responsible community, we celebrate diversity, connect people and enable everyone to try.
+            <br><br>
+            idea / construction / organization / CI / illustration
+          </a>
+        </div>
+        <div>
+          <button class="button">
+            <a href="https://www.instagram.com/holzgarage_dessau/">
+              <div class="button-insta"></div>
+            </a>
+          </button>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_holzgarage2.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-tiny">
+          <img src="illustration/kaiping_holzgarage_logo.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_holzgarage11.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_holzgarage_before.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_holzgarage1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_holzgarage3.jpg" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal purpose-->
+  <div class="modal" id="modal_purpose">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Purpose changes everything
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Together with Nadja and Laurent from Generation Purpose we came up with the poem for the Purpose Story.
+            Based on the story I created the illustrations and the character «O» who is the protagonist of this story.
+            The booklet visualizes the development of a person with an inner purpose who is starting to use this purpose
+            as a compass and communication tool in their life.
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_purpose_cover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_purpose_1.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_purpose_2.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_purpose_makingOf_1.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_purpose_makingOf_2.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_purpose_makingOf_3.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_purpose_makingOf_4.png" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <div class="modal-box-small">
+        <img src="illustration/kaiping_purpose_poster.jpg" loading="lazy" style="width:100%">
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="modal-footer">
+    </div>
+  </div>
+
+  <!--Modal Period-Zine-->
+  <div class="modal" id="modal_periodZine">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Period zine
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>When you are on a road trip, have your period and need to go pee in the bushes at the same time.</a>
+        </div>
+        <div>
+          <br>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_period_1.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_period_2-3.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_period_4-5.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_period_6-7.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_period_8.png" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal WOMAN-->
+  <div class="modal" id="modal_woman">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Everyday things
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_woman_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_woman_2.JPG" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal boat-->
+  <div class="modal" id="modal_boat">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">How to not sink
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Here is a quick and questionably professional guide for building your boat when you are not sure on how to
+            not sink.
+            <br>
+            Thanks dad for explaining some physics to me late in the night and for making me aware of the beautiful word
+            »Formstabilität«.
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boat_header.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boat_1.PNG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boat_2.PNG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boat_3.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boat_4.PNG" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal NEW YEAR-->
+  <div class="modal" id="modal_newYear">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Celebrating the new year in space
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_newYear_2023.png" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal ADVENTS MARKT-->
+  <div class="modal" id="modal_adventsmarkt">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Advent illustration
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Illustration for VorOrt e.V. postcards and their adventmarket.
+            <br>
+            The poster was created in collaboration with Leonardo Mesa Cabrera.
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_adventsmarkt_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_adventsmarkt_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_adventsmarkt_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_adventsmarkt_4.JPG" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal live-drawing-->
+  <div class="modal" id="modal_liveDrawing">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">live drawing - what happens in the artists mind
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>What happens in the mind of an artist while visually recording a talk? An A0 format poster showing how
+            information are (or are not) processed.
+            <br><br>
+            If you need a live illustrator for your event, please get in touch.
+          </a>
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_liveDrawing_poster.JPG" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal HOMES-->
+  <div class="modal" id="modal_homes">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Homes
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_homes_fish.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_homes_sea.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_homes_rabbit.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_homes_underwater.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal EIN FUSS-->
+  <div class="modal" id="modal_einFuss">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">ein fuß &dash; und was er mit dem tod zu tun hat
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>What does a foot have to do with death? Sometimes we understand our lives a little better when we reflect
+            on them. Veronika Kaiping talks about her own experiences, mixed emotions, and hidden ironies. This book is
+            about death, but also about everyday life. And about both together.</a>
+          <br><br>
+          An autobiographical comic about the year 2016, created in 2022 in a course by Alberto Iberbuden at Anhalt
+          University.
+          <br><br>
+          If you are interested in purchasing the full comic please contact me.
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_einFuss_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_cemetry_gif.gif" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_train_gif.gif" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_einFuss_poster.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_5.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_einFuss_6.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_einFuss_cover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_einFuss_legs_gif.gif" loading="lazy" style="width:100%">
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal BOOBS-->
+  <div class="modal" id="modal_boobs">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Boobs
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boobs_1.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_boobs_2.png" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal OBSTACLES-->
+  <div class="modal" id="modal_obstacles">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">We are osbtacles
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Sometimes we are the creators of our own barriers.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_obstacles_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_obstacles_2.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="illustration/kaiping_obstacles_3.png" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal FEELINGS-->
+  <div class="modal" id="modal_feelings">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Feelings
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>An abstract interpretation of states, feelings or moods.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="illustration/kaiping_feelings_1.png" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+-->
+
+  <!--Modal STUDIO-->
+  <div class="modal" id="modal_tonstudio">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">The Studio
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>The studio where I create my work is also an open ceramics workshop called Tonstudio run by a few people
+            and myself. It is located in the VorOrt e.V. building in Wolfgangstraße 13 and we are surrounded by a bunch of other creatives,
+            designers and artisans.
+            <br><br>Our purpose: Tonstudio is an open community of creatives. We focus on learning from and inspiring
+            each other in an inclusive safe-space while experimenting with ceramics.
+          </a>
+        </div>
+        <div>
+          <button class="button">
+            <a href="https://www.instagram.com/tonstudio_dessau/">
+              <div class="button-insta"></div>
+            </a>
+          </button>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tonstudio_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tonstudio_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tonstudio_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tonstudio_4.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal BOWLS-->
+  <div class="modal" id="modal_bowls">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Dessert bowls
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Made from white stoneware clay.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_bowls_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_bowls_2.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_bowls_cover.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_bowls_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal CUFFLINGS-->
+  <div class="modal" id="modal_cufflings">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Cufflings
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Made from white earthenware clay and 925 silver.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_cufflings_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cufflings_header.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cufflings_hover.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cufflings_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cufflings_3.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal CUPS-->
+  <div class="modal" id="modal_cups">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Cups
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Different ceramic cups.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cups_cover.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cups_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_cups_3.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal DUDE SPOONS-->
+  <div class="modal" id="modal_dudeSpoons">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Dude spoons
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Ceramic spoons with a little dude handle.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_dudeSpoons_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_dudeSpoons_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_dudeSpoons_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_dudeSpoons_4.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_dudeSpoons_5.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal FRUITBOWL-->
+  <div class="modal" id="modal_fruitbowl">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Fruitbowl
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Made from stoneware clay.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_fruitbowl_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_fruitbowl_2.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_fruitbowl_5.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_fruitbowl_4.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_fruitbowl_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_fruitbowl_6.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal KLOTOPF-->
+  <div class="modal" id="modal_klotopf">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Klotopf
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>A pot with a pot.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_klotopf_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_klotopf_cover.png" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_klotopf_4.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_klotopf_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_klotopf_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal MUG DUDE-->
+  <div class="modal" id="modal_mugDude">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Figure mugs
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Espresso mugs with figure handles.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_mugDude_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugDude_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugDude_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugDude_cover.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugDude_hover.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal MUGS-->
+  <div class="modal" id="modal_mugs">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Mugs
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Made from white stoneware clay.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_mugs_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugs_cover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugs_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_mugs_2.jpg" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal NOSE PIN-->
+  <div class="modal" id="modal_nosePin">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Nose pins
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>It was not intended to fit glasses but then it did and it's amazing :)
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_nosePin_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_nosePin_hover.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_nosePin_cover.jpg" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal DUDE PIN-->
+  <div class="modal" id="modal_pins">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Dude pins
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Little dudes to carry with you.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pins_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_pins_2.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_pins_5.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_pins_3.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_pins_4.jpg" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal PINSEL-->
+  <div class="modal" id="modal_pinsel">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Your Brush
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Made from ceramic and human hair.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_pinsel_cover.JPG" loading="lazy" style="width:100%">
+          </div>
+          <img src="ceramic/kaiping_pinsel_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pinsel_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pinsel_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pinsel_4.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pinsel_5.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_pinsel_6.JPG" loading="lazy" style="width:100%">
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal PLATES-->
+  <div class="modal" id="modal_plates">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Plates
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>The booger plate and the dude plate.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_plate_popel.JPG" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_plate_dude_1.JPG" loading="lazy" style="width:100%">
+          </div>
+
+
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal SPOONS-->
+  <div class="modal" id="modal_spoons">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Spoons
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoons_cover.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoons_1.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-small">
+            <img src="ceramic/kaiping_spoons_2.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-small">
+            <img src="ceramic/kaiping_spoons_hover.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoons_3.jpg" loading="lazy" style="width:100%">
+          </div>
+
+
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal SPOONS BLUE-->
+  <div class="modal" id="modal_spoonsBlue">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Blue spoons
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoonsBlue_cover.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoonsBlue_1.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoonsBlue_hover.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoonsBlue_2.jpg" loading="lazy" style="width:100%">
+          </div>
+          <div class="modal-box-big">
+            <img src="ceramic/kaiping_spoonsBlue_3.jpg" loading="lazy" style="width:100%">
+          </div>
+
+
+        </div>
+        <!--Footer-->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal TEAPOT-->
+  <div class="modal" id="modal_teapot">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Teapot
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>This is the first teapot design I made. It holds the tea but pouring can be a bit tricky..
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_3.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_2.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_5.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_teapot_6.JPG" loading="lazy" style="width:100%">
+        </div>
+
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal TIP JAR-->
+  <div class="modal" id="modal_tipjar">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Tip jar
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_tipJar_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tipJar_3.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-small">
+          <img src="ceramic/kaiping_tipJar_2.JPG" loading="lazy" style="width:100%">
+        </div>
+
+
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal TOOTHBRUSH-->
+  <div class="modal" id="modal_toothbrush">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Toothbrush
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_toothbrush.JPG" loading="lazy" style="width:100%">
+        </div>
+
+
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal VASES-->
+  <div class="modal" id="modal_vase">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Vases
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_vase_1.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_vase_2.JPG" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_vase_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+        
+
+
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <!--Modal WHALE PLATE-->
+  <div class="modal" id="modal_whale">
+    <div class="modal-content">
+      <!--Titel-->
+      <div class="modal-header">Tea time whale
+        <button class="icon modal-close"><i class="material-icons">close</i></button>
+      </div>
+      <!--Inhalt-->
+      <div class="modal-body">
+        <div class="modal-box-small">
+          <a>Scraffito technique on white clay.
+          </a>
+        </div>
+        <div class="modal-box-small">
+          <a>
+          </a>
+        </div>
+
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_whale_1.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_whale_cover.jpg" loading="lazy" style="width:100%">
+        </div>
+        <div class="modal-box-big">
+          <img src="ceramic/kaiping_whale_hover.jpg" loading="lazy" style="width:100%">
+        </div>
+        
+
+
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
 </body>
-<style>
-    /*slideshow projects*/
-</style>
+
+
+
+</div>
 
 </html>
